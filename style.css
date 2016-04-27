@@ -30,7 +30,7 @@ h5,
 h6 {
   font-family: "Oswald","Source Sans Pro",sans-serif;
   text-align: center;
-  color: #016692;
+  color: #222;
 }
 
 
@@ -38,6 +38,7 @@ h1 {
   font-size: 2.5em;
   line-height: 1.25;
   font-weight: 900;
+  margin-bottom: 20px;
 }
 
 
@@ -46,7 +47,7 @@ h3 {
   font-weight: 400;
   line-height: 1.5;
   padding: 0 30px;
-  margin: 50px auto 20px auto;
+  margin: 25px auto;
 }
 
 h4 {
@@ -76,14 +77,22 @@ p {
 }
 
 .testimonial {
-  background: url("quotes_green.png") no-repeat scroll left top transparent;
+  background: url("https://g.foolcdn.com/art/shop/newsletters/37/microsite/quotes_green.png") no-repeat scroll left top transparent;
+  color: #333333;
+  margin: 0 auto 20px;
+  padding: 22px 0 0 14px;
+  min-height: 70px;
+  max-width: 640px;
+}
+
+.testimonial__simple {
   color: #333333;
   margin: 0 auto 20px;
   padding: 22px 0 0 14px;
   min-height: 70px;
   width: 640px;
+  font-style: italic;
 }
-
 
 .author {
   font-size: .8em;
@@ -106,12 +115,18 @@ li {
   margin-bottom: 10px;
 }
 
+.fa-ul>li {
+    margin-bottom: 12.5px;
+    font-size: 18px;
+  }
+
 ol li {
   padding-left: 7.5px;
 }
 
 .image__well {
-  margin: auto auto 15px auto;
+  margin: 0 auto;
+  padding: 10px;
   display: block;
   max-width: 100%;
   height: auto;
@@ -137,7 +152,7 @@ ol li {
 }
 
 .dude ol li:before {
-  background: #016692;
+  background: #27ae60;
   color: white;
   content: counter(li);
   counter-increment:li;
@@ -164,7 +179,7 @@ ol li {
 
 
 .thumb-pad1 {
-  margin: 0 0 64px 0;
+  margin: 0 0 50px 0;
   overflow: hidden;
 }
 
@@ -193,29 +208,34 @@ ol li {
 .thumb-pad1 .caption {
   padding: 0;
   overflow: hidden;
-  color: #b5b5b5;
+  color: #333;
 }
 
 .thumb-pad1 .caption .title {
   font: 300 30px/30px 'Open Sans';
-  color: #2a2a2a;
-  margin-bottom: 21px;
+  color: #222;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .thumb-pad1 .caption .description {
   font: 20px/1em 'Open Sans';
-  color: #99bf38;
+  color: #27ae60;
   margin-bottom: 7px;
   text-transform: uppercase;
 }
 
-.thumb-pad1 .caption p {
-  margin-bottom: 0;
+
+@media (max-width: 700px) {
+  .thumb-pad1 .thumbnail .badge {
+    float: none;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  .thumb-pad1 {
+    margin-bottom: 15px;
+  }
 }
-
-
-
 
 .nav-tabs > li, .nav-pills > li {
     float:none;
@@ -230,84 +250,6 @@ ol li {
 
 
 
-.tabs {
-  width: 650px;
-  float: none;
-  list-style: none;
-  position: relative;
-  margin: 80px 0 0 10px;
-  text-align: left;
-}
-.tabs li {
-  float: left;
-  display: block;
-}
-.tabs input[type="radio"] {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-.tabs label {
-  display: block;
-  padding: 14px 21px;
-  border-radius: 2px 2px 0 0;
-  font-size: 20px;
-  font-weight: normal;
-  text-transform: uppercase;
-  background: #8e44ad;
-  cursor: pointer;
-  position: relative;
-  top: 4px;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.tabs label:hover {
-  background: #703688;
-}
-.tabs .tab-content {
-  z-index: 2;
-  display: none;
-  overflow: hidden;
-  width: 100%;
-  font-size: 17px;
-  line-height: 25px;
-  padding: 25px;
-  position: absolute;
-  top: 53px;
-  left: 0;
-  background: #612e76;
-}
-.tabs [id^="tab"]:checked + label {
-  top: 0;
-  padding-top: 17px;
-  background: #612e76;
-}
-.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
-  display: block;
-}
-
-p.link {
-  clear: both;
-  margin: 380px 0 0 15px;
-}
-p.link a {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 0 5px;
-  background-color: #612e76;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-p.link a:hover {
-  background-color: #522764;
-}
 
 
 /*
