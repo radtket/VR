@@ -1,0 +1,309 @@
+//colors
+$color-mine-shaft: #333;
+$yellow: yellow;
+$color-log-cabin: #222;
+$color-chateau-green: #27ae60;
+$white: white;
+$black-30: rgba(0, 0, 0, 0.3);
+$color-wild-sand: #f4f5f5;
+
+//fonts
+$font-0: Open Sans;
+$font-1: Helvetica;
+$font-2: Arial;
+$font-3: sans-serif;
+$font-4: Oswald;
+$font-5: Source Sans Pro;
+$font-6: Monserrat;
+$font-7: Helvetica Neue;
+
+//urls
+$url-0: url(https://g.foolcdn.com/art/shop/newsletters/50/microsite/mfow-page_bg.png);
+$url-1: url(https://g.foolcdn.com/art/shop/newsletters/37/microsite/quotes_green.png);
+
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5, h6
+%extend-1 {
+	color: $color-log-cabin;
+	font-family: $font-4, $font-5, $font-3;
+	text-align: center;
+}
+
+//original selectors
+//ul, ol
+%extend-2 {
+	font-family: $font-6, $font-7, $font-1, $font-2, $font-3;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin: 10px auto;
+}
+
+body {
+	background: $url-0 repeat scroll 0 0 transparent;
+	color: $color-mine-shaft;
+	font-family: $font-0, $font-1, $font-2, $font-3;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.highlight {
+	padding: 10px;
+	font-weight: bold;
+	background: $yellow;
+}
+
+h1 {
+	@extend %extend-1;
+	font-size: 2.5em;
+	font-weight: 900;
+	line-height: 1.25;
+	margin-bottom: 20px;
+}
+
+h2 {
+	@extend %extend-1;
+}
+
+h3 {
+	@extend %extend-1;
+	font-size: 1.75em;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 25px auto;
+	padding: 0 30px;
+}
+
+h4 {
+	@extend %extend-1;
+	text-align: left;
+}
+
+h5 {
+	@extend %extend-1;
+}
+
+h6 {
+	@extend %extend-1;
+}
+
+hr {
+	margin: 20px auto;
+	width: 90%;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+.green {
+	color: $color-chateau-green;
+	font-weight: bold;
+}
+
+.header__bullets {
+	margin-bottom: 50px;
+	margin-top: 25px;
+	margin: 0 auto;
+	width: 80%;
+
+	p {
+		font-weight: 700;
+	}
+
+	li {
+		font-weight: 700;
+	}
+}
+
+#page-wrapper {
+	background: $white;
+	border-radius: 12px;
+	box-shadow: 0 0 4px $black-30;
+	margin: 20px auto;
+	max-width: 960px;
+	padding: 20px 90px;
+}
+
+.testimonial {
+	background: $url-1 no-repeat scroll left top transparent;
+	color: $color-mine-shaft;
+	margin: 0 auto 20px;
+	max-width: 640px;
+	min-height: 70px;
+	padding: 22px 0 0 14px;
+}
+
+.testimonial__simple {
+	color: $color-mine-shaft;
+	font-style: italic;
+	margin: 0 auto 20px;
+	min-height: 70px;
+	padding: 22px 0 0 14px;
+	width: 640px;
+}
+
+.author {
+	color: $color-log-cabin;
+	font-family: $font-6, $font-7, $font-1, $font-2, $font-3;
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+ul {
+	@extend %extend-2;
+}
+
+ol {
+	@extend %extend-2;
+
+	li {
+		padding-left: 7.5px;
+	}
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+.image__well {
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 10px;
+}
+
+.number__block {
+	margin: 20px auto;
+	width: 90%;
+
+	ol {
+		counter-reset: li;
+		margin: 0;
+		padding: 0;
+
+		li {
+			font-size: 1.3em;
+			list-style: none;
+			margin: 0 0 0.5em 1.95em;
+			padding: 0.5em 1em;
+			position: relative;
+
+			&::before {
+				background: $color-chateau-green;
+				color: $white;
+				content: counter(li);
+				counter-increment: li;
+				font-size: 1.2em;
+				left: -1.6em;
+				line-height: 1em;
+				padding: 0.5em 0;
+				position: absolute;
+				text-align: center;
+				top: 0.4em;
+				width: 2em;
+			}
+
+			p {
+				padding-left: 20px;
+			}
+
+			span {
+				position: absolute;
+				line-height: 25px;
+			}
+		}
+	}
+}
+
+.btn {
+	margin: 25px auto;
+}
+
+.thumb-pad1 {
+	margin: 0 0 50px;
+	overflow: hidden;
+
+	&:first-of-type {
+		margin-top: 15px;
+	}
+
+	.thumbnail {
+		background: none;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+
+		.badge {
+			background: $color-wild-sand;
+			border-radius: 0;
+			float: left;
+			height: 170px;
+			line-height: 170px;
+			margin-right: 30px;
+			text-align: center;
+			width: 170px;
+		}
+	}
+
+	.caption {
+		color: $color-mine-shaft;
+		overflow: hidden;
+		padding: 0;
+
+		.title {
+			color: $color-log-cabin;
+			font: 300 30px/30px $font-0;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+
+		.description {
+			color: $color-chateau-green;
+			font: 20px/1em $font-0;
+			margin-bottom: 7px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.thumb-pad1 {
+		margin-bottom: 15px;
+
+		.thumbnail .badge {
+			float: none;
+			margin: 0 0 20px;
+			width: 100%;
+		}
+	}
+}
+
+.nav-tabs {
+	text-align: center;
+
+	> li {
+		display: inline-block;
+		float: none;
+	}
+}
+
+.fa-ul > li {
+	font-size: 18px;
+	margin-bottom: 12.5px;
+}
+
+.nav-pills > li {
+	display: inline-block;
+	float: none;
+}
