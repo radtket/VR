@@ -1,0 +1,46 @@
+{
+	"name": "tmf__virtual-reality",
+	"version": "1.0.0",
+	"description": "a newsletter for The Motley Fool",
+	"main": "docs/index.html",
+	"scripts": {
+		"start": "gulp watch",
+		"build": "gulp"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/radtket/tmf__virtual-reality.git"
+	},
+	"keywords": [],
+	"author": "Taylor Radtke",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/radtket/tmf__virtual-reality/issues"
+	},
+	"homepage": "https://github.com/radtket/tmf__virtual-reality#readme",
+	"devDependencies": {
+		"autoprefixer": "^9.4.5",
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.0",
+		"babel-eslint": "^8.2.2",
+		"babel-loader": "^8.0.5",
+		"babel-preset-env": "^1.6.1",
+		"browser-sync": "^2.26.3",
+		"cssnano": "^4.1.8",
+		"del": "^3.0.0",
+		"eslint": "^5.11.1",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-imagemin": "^5.0.3",
+		"gulp-newer": "^1.4.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass-glob": "^1.0.9",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp": "^4.0.0",
+		"prettier": "^1.15.2",
+		"stylelint-config-standard": "^18.2.0",
+		"stylelint": "^9.2.0"
+	}
+}
