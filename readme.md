@@ -6,8 +6,6 @@ A Newsletter mock up about Virtual Reality
 
 ## Getting started
 
-Install the starter using Gatsby Cli `gatsby new` command.
-
 ### Clone repo
 
 ``` bash
